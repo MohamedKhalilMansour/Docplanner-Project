@@ -1,0 +1,454 @@
+
+html {
+    font-weight: normal;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+svg {
+    margin: 5px;
+}
+
+.navigationbar {
+    padding-top: 10px;
+    display: flex;
+    z-index: 2;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+.mainlogo {
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 179, 155);
+    top: 0;
+    background-color: white;
+
+}
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 179, 155);
+    padding:0px 10px;
+}   
+    .navtitle1 {
+    cursor: pointer;
+}
+
+.navtitle2 {
+    cursor: pointer;
+}
+
+.navbar p {
+    padding-right: 20px;
+}
+.logo{
+    margin-top: 50px;
+}
+.downlist {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+.drop-list {
+    position: absolute;
+    display: none;
+    box-shadow: 1px;
+    z-index: 1;
+    box-shadow: 0 1px 10px 0 #454441;
+    background-color: white;
+    width: 200px;
+}
+.drop-list a {
+    text-decoration: none;
+    color: rgb(0, 179, 155);
+}
+.downlist:hover  .drop-list {
+    display: block;
+    flex-direction: column;
+    box-shadow: 0 1px 10px 0 #454441;
+}
+
+.container1 {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "log log"
+        "slog slog"
+        "resum resum";
+}
+
+.logo {
+    grid-area: log;
+    display: flex;
+    justify-content: center;
+}
+
+.slog-h1 {
+    grid-area: slog;
+    grid-template-columns: auto auto;
+    font-family: 'work sans';
+    color: rgb(0, 179, 155);
+    font-size: 33px;
+    justify-self: center;
+}
+
+.resume {
+    grid-area: resum;
+    display: flex;
+    
+    font-family: 'roboto';
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.paragraph1 {
+    align-self: flex-start;
+    margin-right: 1%;
+}
+
+.paragraph2 {
+    align-self: flex-start;
+    margin-left: 1%;
+}
+
+.container2 {
+    width: 65%;
+    margin: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 360px;
+}
+
+.container2 h1 {
+    font-weight: 300;
+    font-family: 'work sans';
+    color: white;
+}
+
+.container2 h2 {
+    font-weight: 300;
+    font-family: 'work sans';
+    color: white;
+}
+
+.patients {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(0, 204, 177);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.doctors {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(61, 131, 223);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clinics {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(48, 59, 71);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+select {
+    margin-left: 10px;
+    margin-top: 20px;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    border: 0;
+    color: white;
+}
+
+select option {
+    color: black;
+}
+
+.container3 {
+    display: grid;
+    width: 65%;
+    margin: auto;
+    margin-top: 40px;
+    grid-template-areas: "brands_presentation brands_logos";
+    grid-template-columns: 23% 77%;
+
+}
+ul {
+    list-style-type: none;
+}
+
+.brands_presentation h1 {
+    color: rgb(75, 184, 162);
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'work sans';
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.brands_logos {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    margin-left: 90px;
+}
+.container4 {
+    margin-top: 50px;
+    background-color: rgb(216, 245, 245);
+    display: grid;
+    width: 100%;
+    grid-template-areas: "platformpresentation boxes"
+    "biglogo boxes" ;
+    grid-template-columns: repeat(2 ,1fr);
+    height: 560px;
+}
+.platform-presentation {
+    grid-area: platformpresentation;
+    padding-top: 20px;
+    padding-left: 275px;
+    padding-right: 50px;
+    text-align: start;
+    
+}
+.platform-presentation h1 {
+    font-family: 'work sans';
+    color: rgb(0, 179, 155);
+    justify-content: left;
+    font-size: 33px;
+    font-weight: 200;
+    margin-left: 0;
+    
+}
+.platform-presentation p {
+    font-family: 'roboto';
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+    line-height: 2;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+.biglogo {
+    grid-area: biglogo;
+    margin-left: 125px;
+    overflow: hidden;
+    
+}
+.boxes {
+    grid-area: boxes;
+    display: grid;
+    padding-top: 25px;
+    grid-template-areas: "box1 box2"
+    "box3 box4";
+    justify-content: start;
+}
+.boxes h2 {
+    color: rgb(75, 184, 162);
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'work sans';
+    margin: 0;
+}
+.boxes p {
+    font-family: 'roboto';
+    font-size: 13.5px;
+    color: rgb(116, 116, 116);
+    line-height: 1,7;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: white;
+    height: 250px;
+    width: 230px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform:translateY(7px)
+}
+.box2 {
+    grid-area: box2;
+    background-color: white;
+    height: 250px;
+    width: 230px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform:translateY(-7px)
+}
+.box3 {
+    grid-area: box3;
+    background-color: white;
+    height: 250px;
+    width: 230px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform:translateY(5px)
+}
+.box4 {
+    grid-area: box4;
+    background-color: white;
+    height: 250px;
+    width: 230px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform:translateY(-5px)
+}
+.container5 h1 {
+    font-family: 'work sans';
+    color: rgb(0, 179, 155);
+    justify-content: left;
+    font-size: 33px;
+    font-weight: 200;
+    margin-left: 0;   
+}
+.container5 p {
+    font-family: 'roboto';
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+    line-height: 1.5;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.container5 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 33%;
+    margin-right: 33%;
+    text-align: center;
+}
+.container6 {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.offices {
+    margin: 8px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 300px;
+    z-index: 1;
+    display: block;
+    color: #747474;
+}
+.offices a {
+   text-decoration: none;
+}
+.imageoff {
+    margin: 0;
+}
+.office-country {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border-radius: 3px;
+    background-color: rgb(61, 131, 223); 
+    border: none;
+    cursor: pointer;
+}
+.btn-text {
+    font-family: "roboto";
+    color: white;
+    margin: 5px; 
+}
+.country {
+    color: rgb(116, 116, 116);
+    font-family: "work sans";
+    font-size: 18px;
+}
+.container7 {
+    text-align: center;
+    margin-top: 80px;
+}
+.container7 h1 {
+    font-family: "work sans";
+    font-weight: 100;
+    font-size: 30px;
+}
+.big-btn{
+    background-color: rgb(61, 131, 223); 
+    border: none;
+    border-radius: 4px;
+    width: 240px;
+    height: 35px;
+}
+.big-btn a {
+    text-decoration: none;
+    color: white; 
+    font-family:"roboto";
+    padding: 20px;
+}
+.countriesadress a {
+    text-decoration: none;
+}
+.countriesadress {
+    color: rgb(173, 173, 173);  
+    font-family: "roboto";
+    font-size: 12px;
+    margin-top: 90px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(238, 242, 242);
+}
+.lastp {
+    width: 60%;
+    margin: auto;
+    font-family: "roboto";
+    font-size: 12px;
+    color: rgb(173, 173, 173);  
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
